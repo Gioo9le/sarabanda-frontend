@@ -1,0 +1,60 @@
+.optionComponent{
+    position:absolute;
+    width: 91.92%;
+    height: 12.38%;
+    left: 4.34%;
+    border-radius: 100px;
+    background: #F7FFF7;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.optionLabel{
+    width: 80%;
+    left: 10%;
+    height: 100%;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    /* or 16px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.optionComponent0{
+    bottom: 219px;
+}
+.optionComponent1{
+    bottom: 167px;
+}
+.optionComponent2{
+    bottom: 114px;
+}
+.optionComponent3{
+    bottom: 61px;
+}
+.optionComponent4{
+    bottom: 8px;
+}
+
+.optionComponentSelectedTrue{
+    background: #00D856;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #00D856;
+    border-radius: 86px;
+}
+
+.optionComponentSelectedFalse{
+    background: #FF6B6B;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #FF6B6B;
+    border-radius: 86px;
+}

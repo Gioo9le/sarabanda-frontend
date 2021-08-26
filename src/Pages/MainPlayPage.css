@@ -1,0 +1,56 @@
+.artistBox{
+    position: absolute;
+    width: 161px;
+    height: 323px;
+    left: 16px;
+    top: 176px;
+
+    background: #F7FFF7;
+    border-radius: 23px;
+}
+
+.songBox{
+    position: absolute;
+    width: 156px;
+    height: 323px;
+    left: 187px;
+    top: 176px;
+
+    background: #F7FFF7;
+    border-radius: 23px;
+}
+
+.boxTitle{
+    position: absolute;
+    top: 6.19%;
+    width: 100%;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+}
+
+#currentPlaying{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+}
+
+#readyButton{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    border-radius:100px;
+    height: 10%;
+}
