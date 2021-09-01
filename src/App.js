@@ -15,7 +15,7 @@ function App() {
   const [selectedArtist, setSelectedArtist] = useState([false, false, false, false, false])
   const syncButton = function(timestamp){
     setSyncTime(timestamp);
-    fetch('http://localhost:5000/login').then(res=>res.text()).then((res)=>window.location.href = res);
+    fetch('https://musiquizzz.herokuapp.com/login').then(res=>res.text()).then((res)=>window.location.href = res);
 
   }
   const selectSong = function(id){
@@ -47,7 +47,7 @@ function App() {
   }
 
   const getSongArtistOptions = function(){
-      fetch('http://localhost:5000/song').then(res=>res.json()).then(res=>{console.log(res); return res}).then((res)=>{
+      fetch('https://musiquizzz.herokuapp.com/song').then(res=>res.json()).then(res=>{console.log(res); return res}).then((res)=>{
           setSongOptions(res.songs_artists.map((el)=>{return el[1]}).sort(function() { return 0.5 - Math.random() }));
           setArtistOptions(res.songs_artists.map((el)=>{return el[0]}).sort(function() { return 0.5 - Math.random() }));
           setCurrentPlaying(res.current_playing)
@@ -73,8 +73,11 @@ function App() {
                       selectArtist={selectArtist}
                   />
               </Route>
-              <Route path="/">
+              <Route path="/sync">
                   <SyncPage syncButton={syncButton}/>
+              </Route>
+              <Route path="/">>
+
               </Route>
           </Switch>
       </Router>
